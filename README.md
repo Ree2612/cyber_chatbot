@@ -26,28 +26,14 @@ Map Visualization: Leaflet.js
 UI Styling: Glassmorphic + Orbitron font + custom chatbot bubbles
 
 📁 Folder Structure
-cyber_chatbot/
-│
-├── templates/
-│   ├── index.html          # Chatbot interface
-│   └── admin.html          # Admin log/map view
-│
-├── static/
-│   └── sounds/ping.mp3     # Bot reply sound
-│
-├── chatbot_logic.py        # Bot brain (spaCy + OpenAI)
-├── back.py                 # Flask backend
-├── logs.csv                # Stores IP logs & chat queries
-├── threat_log.txt          # Plain text log
-├── requirements.txt        # Dependencies
-├── .env                    # API key (not shared!)
+![structure](https://github.com/user-attachments/assets/83748c6d-485f-4e0c-bc3a-d9655d173ecd)
 
 🧪 Try It
 Clone repo
 Install requirements
-pip install -r requirements.txt
+*pip install -r requirements.txt*
 Run
-Visit http://localhost:5000
+*Visit http://localhost:5000*
 
 ⚠️ Notes
 Your .env file must include:OPENAI_API_KEY=your_api_key_here
