@@ -29,15 +29,23 @@ UI Styling: Glassmorphic + Orbitron font + custom chatbot bubbles
 ![structure](https://github.com/user-attachments/assets/83748c6d-485f-4e0c-bc3a-d9655d173ecd)
 
 🧪 Try It
+
 Clone repo
+
 Install requirements
+
 *pip install -r requirements.txt*
+
 Run
+
 *Visit http://localhost:5000*
 
 ⚠️ Notes
+
 Your .env file must include:OPENAI_API_KEY=your_api_key_here
+
 IP and location are logged for every chat
+
 Meant for educational & ethical purposes only
 
 
