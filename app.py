@@ -37,16 +37,15 @@ def home():
 
 @app.route("/chat", methods=["POST"])
 def chat():
-
     user_msg = request.json.get("message")
-   # Accurate IP detection logic for Flask
-    if request.remote_addr == "127.0.0.1":
-    # You're testing locally, so fetch your actual public IP
-     user_ip = requests.get("https://api64.ipify.org").text
-    else:
-    # On real server, use the real IP directly
-     user_ip = request.remote_addr
 
+    # Accurate IP detection logic for Flask
+    if request.remote_addr == "127.0.0.1":
+        # You're testing locally, so fetch your actual public IP
+        user_ip = requests.get("https://api64.ipify.org").text
+    else:
+        # On real server, use the real IP directly
+        user_ip = request.remote_addr
 
     geo = get_geolocation(user_ip)
     bot_reply, is_threat, threat_terms = get_bot_response(user_msg)
