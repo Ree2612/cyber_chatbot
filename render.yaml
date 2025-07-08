@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: cyber-chatbot
+    env: python
+    buildCommand: ""
+    startCommand: gunicorn app:app
+    envVars:
+      - key: OPENAI_API_KEY
+        value: 14ePhPF8MGuwg7Bs8egLRbaK4u2XU9AVHhKD2xzn
