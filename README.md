@@ -52,7 +52,7 @@ Install requirements
 
 Run
 
-*Visit http://localhost:5000*
+"*Visit http://localhost:5000*"
 
 ⚠️ Notes
 
